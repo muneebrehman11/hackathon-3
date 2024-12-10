@@ -135,10 +135,10 @@ export default function Pricing() {
                     Try it for now
                 </button>
                 <div className="flex gap-3 py-5">
-                    <img src="/assets/Vector (2).png" alt="" />
-                    <img src="/assets/logos_facebook.png" alt="" />
-                    <img src="/assets/Vector (3).png" alt="" />
-                    <img src="/assets/Vector (4).png" alt="" />
+                    <img src="/assets/Vector (2).png" alt="abc" />
+                    <img src="/assets/logos_facebook.png" alt="abc" />
+                    <img src="/assets/Vector (3).png" alt="abc" />
+                    <img src="/assets/Vector (4).png" alt="abc" />
                 </div>
             </div>
         </section>

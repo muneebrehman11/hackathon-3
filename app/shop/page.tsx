@@ -40,7 +40,7 @@ export default function Shop() {
                             src={img.image}
                             alt={img.alt}
                             
-                            priority={true}
+                            // priority={true}
                             className="object-cover w-full h-full"
                         />
                     </div>
@@ -95,7 +95,7 @@ export default function Shop() {
                             src={logo.image}
                             alt={logo.alt}
                             
-                            priority={true}
+                            // priority={true}
                             className="object-contain"
                         />
                     </div>
