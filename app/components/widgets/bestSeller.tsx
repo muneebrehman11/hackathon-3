@@ -1,6 +1,4 @@
 
-import Image from 'next/image';
-
 
 const HomePage: React.FC = () => {
   return (
@@ -10,46 +8,46 @@ const HomePage: React.FC = () => {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-5">
         <div className="flex justify-center">
-          <Image src="/assets/col-md-3.png" alt="Product 1" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/col-md-3.png" alt="Product 1" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card.png" alt="Product 2" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card.png" alt="Product 2" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card (1).png" alt="Product 3" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card (1).png" alt="Product 3" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card (2).png" alt="Product 4" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card (2).png" alt="Product 4" className="cursor-pointer w-full h-auto" />
         </div>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-5">
         <div className="flex justify-center">
-          <Image src="/assets/col-md-3.png" alt="Product 5" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/col-md-3.png" alt="Product 5" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card.png" alt="Product 6" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card.png" alt="Product 6" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card (1).png" alt="Product 7" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card (1).png" alt="Product 7" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card (2).png" alt="Product 8" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card (2).png" alt="Product 8" className="cursor-pointer w-full h-auto" />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-5">
         <div className="flex justify-center">
-          <Image src="/assets/col-md-3.png" alt="Product 9" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/col-md-3.png" alt="Product 9" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card.png" alt="Product 10" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card.png" alt="Product 10" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card (1).png" alt="Product 11" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card (1).png" alt="Product 11" className="cursor-pointer w-full h-auto" />
         </div>
         <div className="flex justify-center">
-          <Image src="/assets/Product card (2).png" alt="Product 12" className="cursor-pointer w-full h-auto" />
+          <img  src="/assets/Product card (2).png" alt="Product 12" className="cursor-pointer w-full h-auto" />
         </div>
       </div>
     </div>

@@ -1,10 +1,4 @@
 
-
-
-
-// responsive
-
-
 import { useState } from "react";
 import Link from "next/link";
 import { Search, ShoppingCart, Heart, User, ChevronDown, Menu, X } from "lucide-react";

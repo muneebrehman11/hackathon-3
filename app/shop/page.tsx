@@ -1,7 +1,3 @@
-
-
-
-import Image from "next/image";
 import { ChevronRight } from 'lucide-react';
 
 const clothImages = [
@@ -40,11 +36,10 @@ export default function Shop() {
             <div className="flex flex-wrap justify-center gap-4 py-10">
                 {clothImages.map((img, index) => (
                     <div key={`cloth-${index}`} className="w-1/2 sm:w-1/3 lg:w-1/6">
-                        <Image
+                        <img 
                             src={img.image}
                             alt={img.alt}
-                            width={200}
-                            height={300}
+                            
                             priority={true}
                             className="object-cover w-full h-full"
                         />
@@ -60,19 +55,18 @@ export default function Shop() {
                         <div className="flex space-x-2 items-center">
                             <p className="text-[#737373] font-bold text-sm">Views</p>
                             <button className="p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <Image
+                                <img 
                                     src="/assets/btn-sm-24.png"
                                     alt=""
-                                    width={24}
-                                    height={24}
+                                    
                                 />
                             </button>
                             <button className="p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <Image
+                                <img
+                                 
                                     src="/assets/btn-sm-24 (1).png"
                                     alt=""
-                                    width={24}
-                                    height={24}
+                                    
                                 />
                             </button>
                         </div>
@@ -97,11 +91,10 @@ export default function Shop() {
             <div className="bg-[#FAFAFA] py-10 flex flex-wrap justify-center gap-10">
                 {clientsLogos.map((logo, index) => (
                     <div key={`logo-${index}`} className="w-1/2 sm:w-1/12 md:w-1/12">
-                        <Image
+                        <img 
                             src={logo.image}
                             alt={logo.alt}
-                            width={100}
-                            height={100}
+                            
                             priority={true}
                             className="object-contain"
                         />
@@ -155,26 +148,26 @@ export default function Shop() {
             <div className="mt-5">
                 {/* First Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8">
-                    <Image src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
                 </div>
 
                 {/* Second Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
-                    <Image src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
                 </div>
 
                 {/* Third Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
-                    <Image src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <Image src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <img  src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
                 </div>
             </div>
 

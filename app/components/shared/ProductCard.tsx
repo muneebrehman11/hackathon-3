@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 // components/ProductCard.tsx
 import React from 'react';
@@ -14,7 +13,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ image, department, originalPrice, discountedPrice, colors }) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <Image className="w-full" src={image} alt="Product Image" />
+      <img  className="w-full" src={image} alt="Product img " />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{department}</div>
         <p className="text-gray-700 text-base">

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 import { Clock1 } from 'lucide-react';
 import { ChevronRight } from 'lucide-react';
@@ -37,7 +36,7 @@ export default function FeaturedPosts() {
         {images.map((_, i) => (
           <div key={i} className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
             <div className="relative">
-              <Image
+              <img 
                 src={`${images[i].src}.png`} // Ensure the images are correctly placed in the public folder
                 alt={images[i].title}
                 className="w-full object-cover max-h-72 sm:max-h-96 lg:max-h-[400px]"

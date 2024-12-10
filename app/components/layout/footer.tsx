@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 import React from 'react';
 
@@ -11,9 +10,9 @@ export default function Footer() {
           <h1 className="font-bold text-2xl">Bandage</h1>
 
           <ul className="flex gap-6">
-            <li><Image src="/assets/fb.png" alt="Facebook" /></li>
-            <li><Image src="/assets/insta.png" alt="Instagram" /></li>
-            <li><Image src="/assets/x.png" alt="Twitter" /></li>
+            <li><img  src="/assets/fb.png" alt="Facebook" /></li>
+            <li><img  src="/assets/insta.png" alt="Instagram" /></li>
+            <li><img  src="/assets/x.png" alt="Twitter" /></li>
           </ul>
         </div>
 

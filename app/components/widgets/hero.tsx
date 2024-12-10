@@ -1,14 +1,14 @@
 
-import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section>
       {/* Hero Section */}
       <div className="min-h-screen flex items-center justify-center relative">
-        <Image
+        <img 
           src="/assets/shop-hero-1-product-slide-1.jpg"
           alt="Hero Background"
+          
           className="w-full h-full object-cover"
         />
 
@@ -46,14 +46,15 @@ export default function Hero() {
           {/* Content */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3  justify-items-center">
             <div>
-              <Image
+              <img 
                 src="/assets/col-md-6.png"
                 alt="Editor's Pick 1"
                 className="w-full h-auto "
+                
               />
             </div>
             <div>
-              <Image
+              <img 
                 src="/assets/card-item.png"
                 alt="Editor's Pick 2"
                 className="w-full h-auto max-w-[300px] sm:max-w-[350px] md:max-w-[400px]"
@@ -61,14 +62,14 @@ export default function Hero() {
             </div>
             <div className="space-y-4">
               <div>
-                <Image
+                <img 
                   src="/assets/filter.png"
                   alt="Editor's Pick 3"
                   className="w-full h-auto max-w-[300px] sm:max-w-[350px] md:max-w-[400px]"
                 />
               </div>
               <div>
-                <Image
+                <img 
                   src="/assets/media bg-cover.png"
                   alt="Editor's Pick 4"
                   className="w-full h-auto max-w-[300px] sm:max-w-[350px] md:max-w-[400px]"

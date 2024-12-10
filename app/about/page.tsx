@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 
 const cientsLogos = [
@@ -54,7 +53,7 @@ export default function About() {
                 {/* Right Section */}
                 {/* <div className="flex-1 flex justify-center relative"> */}
                 <div className="h-[637px] w-6/12 flex items-end ">
-                    <Image
+                    <img 
                         src="/assets/Component 1.png" // Add the shopping lady image to the public folder
                         alt="Shopping Lady"
                         width={605}
@@ -102,7 +101,7 @@ export default function About() {
 
             {/* video section */}
             <div className="flex justify-center">
-                <Image src="/assets/desktop-video-3.png" alt="" />
+                <img  src="/assets/desktop-video-3.png" alt="" />
             </div>
 
             {/* Meet our team section */}
@@ -120,7 +119,7 @@ export default function About() {
                             {/* Team Member 1 */}
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-[329px] h-[231px]  relative mb-4">
-                                    <Image
+                                    <img 
                                         src="/assets/team-1-user-1.png" // Replace with your image paths
                                         alt="Team Member 1"
                                         className="rounded-lg object-cover"
@@ -164,7 +163,7 @@ export default function About() {
                             {/* Duplicate similar blocks for additional team members */}
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-[329px] h-[231px]  relative mb-4">
-                                    <Image
+                                    <img 
                                         src="/assets/media.png" // Replace with your image paths
                                         alt="Team Member 1"
                                         className="rounded-lg object-cover"
@@ -208,7 +207,7 @@ export default function About() {
                             {/* _____________________________________________________ */}
                             <div className="flex flex-col items-center text-center">
                                 <div className=" w-[329px] h-[231px] relative mb-4">
-                                    <Image
+                                    <img 
                                         src="/assets/team-1-user-3.png" // Replace with your image paths
                                         alt="Team Member 1"
                                         className="rounded-lg object-cover"
@@ -272,7 +271,7 @@ export default function About() {
                     {
                         cientsLogos.map((cimages, i) => (
                             <div key={i} >
-                                <Image src={cimages.image} alt={cimages.alt} />
+                                <img  src={cimages.image} alt={cimages.alt} />
                             </div>
                         ))
                     }
@@ -299,7 +298,7 @@ export default function About() {
 
                 {/* right */}
                 <div className=" h-[637px] w-4/12 flex items-end bg-[#e7ebee]">
-                    <Image src="/assets/unsplash.png" alt="" />
+                    <img  src="/assets/unsplash.png" alt="" />
                 </div>
             </div>
         </div>

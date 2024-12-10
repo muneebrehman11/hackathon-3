@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 const cientsLogos = [
     {
@@ -60,7 +59,7 @@ export default function Pricing() {
                     <button className="w-28 h-10 bg-gray-300 hover:bg-blue-100 rounded-full text-black hover:text-blue-800 font-semibold">Save 25%</button>
                 </div>
                 <div className="flex justify-center">
-                    <Image src={"/assets/row (3).png"} alt={'a'} />
+                    <img src='/assets/row (3).png' alt={'a'}   />
                 </div>
 
                 {/* Clients Section */}
@@ -70,7 +69,7 @@ export default function Pricing() {
                          {
                              cientsLogos.map((cimages, i) => (
                                  <div key={i} >
-                                     <Image src={cimages.image} alt={cimages.alt} />
+                                     <img src={cimages.image} alt={cimages.alt} />
                                  </div>
                              ))
                          }
@@ -136,10 +135,10 @@ export default function Pricing() {
                     Try it for now
                 </button>
                 <div className="flex gap-3 py-5">
-                    <Image src="/assets/Vector (2).png" alt="" />
-                    <Image src="/assets/logos_facebook.png" alt="" />
-                    <Image src="/assets/Vector (3).png" alt="" />
-                    <Image src="/assets/Vector (4).png" alt="" />
+                    <img src="/assets/Vector (2).png" alt="" />
+                    <img src="/assets/logos_facebook.png" alt="" />
+                    <img src="/assets/Vector (3).png" alt="" />
+                    <img src="/assets/Vector (4).png" alt="" />
                 </div>
             </div>
         </section>

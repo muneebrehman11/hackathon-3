@@ -1,5 +1,4 @@
 
-import Image from 'next/image';
 
 export default function Hero2() {
   return (
@@ -23,9 +22,9 @@ export default function Hero2() {
               </button>
             </div>
           </div>
-          {/* Right Section with Image */}
+          {/* Right Section with img  */}
           <div className="lg:w-1/2 flex justify-center mb-[-93px]">
-            <Image
+            <img 
               src="/assets/col-md-6 (1).png"
               alt="New Collection"
               className="max-w-full h-auto object-contain"
@@ -36,13 +35,13 @@ export default function Hero2() {
 
       {/* 2nd Part / Subsection */}
       <div className="flex flex-col lg:flex-row items-center justify-between text-black px-6 lg:px-16">
-        {/* Left Image Section */}
+        {/* Left img  Section */}
         <div className="lg:w-1/2 flex justify-center mb-8 lg:mb-0">
-          <Image
+          <img 
             src="/assets/hero-cover-1.png"
             alt="Couple with Scarf"
             className="max-w-full h-auto object-contain"
-            // Adjusting image size for breakpoints
+            // Adjusting image  size for breakpoints
             style={{ maxWidth: "600px", width: "100%" }}
           />
         </div>
