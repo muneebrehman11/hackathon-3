@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full border-2  sticky top-0 bg-white shadow-md z-20">
+    <header className="w-full border-2  sticky top-0 bg-black shadow-md z-20">
       {/* Top Bar */}
       <div className="flex justify-between items-center py-4 px-6 sm:px-10 max-w-screen-2xl mx-auto">
         {/* Logo */}
