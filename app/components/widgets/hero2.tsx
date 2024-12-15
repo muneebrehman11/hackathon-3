@@ -1,5 +1,5 @@
 
-
+import Image from "next/image";
 export default function Hero2() {
   return (
     <section>
@@ -22,11 +22,12 @@ export default function Hero2() {
               </button>
             </div>
           </div>
-          {/* Right Section with img  */}
+          {/* Right Section with Image  */}
           <div className="lg:w-1/2 flex justify-center mb-[-93px]">
-            <img 
+            <Image 
               src="/assets/col-md-6 (1).png"
               alt="New Collection"
+              width={443} height={685}
               className="max-w-full h-auto object-contain"
             />
           </div>
@@ -35,11 +36,13 @@ export default function Hero2() {
 
       {/* 2nd Part / Subsection */}
       <div className="flex flex-col lg:flex-row items-center justify-between text-black px-6 lg:px-16">
-        {/* Left img  Section */}
+        {/* Left Image  Section */}
         <div className="lg:w-1/2 flex justify-center mb-8 lg:mb-0">
-          <img 
+          <Image 
             src="/assets/hero-cover-1.png"
             alt="Couple with Scarf"
+            width={704}
+            height={682}
             className="max-w-full h-auto object-contain"
             // Adjusting image  size for breakpoints
             style={{ maxWidth: "600px", width: "100%" }}
@@ -56,7 +59,7 @@ export default function Hero2() {
             We know how large objects will act, but things on a small scale.
           </p>
           <div className="mt-6 flex gap-4">
-            <button className="bg-green-500 text-white font-semibold py-2 px-6 rounded hover:bg-green-600">
+            <button className="bg-green-500  text-white font-semibold py-2 px-6 rounded hover:bg-green-600">
               Buy Now
             </button>
             <button className="bg-transparent border-2 border-green-500 text-green-500 font-semibold py-2 px-6 rounded hover:bg-green-600 hover:text-white">

@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import { Clock1 } from 'lucide-react';
 import { ChevronRight } from 'lucide-react';
 import { ChartArea } from 'lucide-react';
@@ -36,9 +36,11 @@ export default function FeaturedPosts() {
         {images.map((_, i) => (
           <div key={i} className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
             <div className="relative">
-              <img 
+              <Image 
                 src={`${images[i].src}.png`} // Ensure the images are correctly placed in the public folder
                 alt={images[i].title}
+                width={348}
+                height={606}
                 className="w-full object-cover max-h-72 sm:max-h-96 lg:max-h-[400px]"
               />
               <span className="absolute top-4 left-4 bg-red-500 text-white text-sm font-semibold py-1 px-3 rounded">

@@ -1,5 +1,5 @@
 
-
+import Image from "next/image"
 export default function Contact() {
     return (
         <section>
@@ -18,17 +18,17 @@ export default function Contact() {
                     <p>Phone: +451 215 215</p>
                     <p>Fax: +451 215 215</p>
                     <div className='flex gap-3 py-5' >
-                        <img  src="/assets/Vector (2).png" alt="" />
-                        <img  src="/assets/logos_facebook.png" alt="" />
-                        <img  src="/assets/Vector (3).png" alt="" />
-                        <img  src="/assets/Vector (4).png" alt="" />
+                        <Image  src="/assets/Vector (2).png" alt="abc" width={29.98} height={29.98}/>
+                        <Image  src="/assets/logos_facebook.png" alt="abc" width={29.98} height={29.98}/>
+                        <Image  src="/assets/Vector (3).png" alt="abc" width={29.98} height={29.98}/>
+                        <Image  src="/assets/Vector (4).png" alt="abc" width={29.98} height={29.98}/>
                     </div>
                 </div>
 
                 {/* Right Section */}
                 {/* <div className="flex-1 flex justify-center relative"> */}
                 <div className="h-[637px] w-6/12 flex items-end ">
-                    <img 
+                    <Image 
                         src="/assets/none.png" // Add the shopping lady image  to the public folder
                         alt="Shopping Lady"
                         width={605}
@@ -53,7 +53,7 @@ export default function Contact() {
                 </div>
                 <div className="flex justify-center gap-2 font-semibold">
                     <div className=" w-2/12 place-items-center flex flex-col p-10 hover:shadow-xl gap-y-5  hover:border">
-                        <img  src="/assets/mail.png" alt="" />
+                        <Image  src="/assets/mail.png" alt="abc" width={72} height={72}/>
                         <a href="#">georgia.young@example.com</a>
                         <a href="#">georgia.young@ple.com</a>
                         <a href="#">Get Support</a>
@@ -61,7 +61,7 @@ export default function Contact() {
                     </div>
 
                     <div className="bg-blue-950 text-white w-2/12 place-items-center flex flex-col p-10 gap-y-5 hover:border">
-                        <img  src="/assets/mail.png" alt="" />
+                        <Image  src="/assets/mail.png" alt="abc" width={72} height={72}/>
                         <a href="#">georgia.young@example.com</a>
                         <a href="#">georgia.young@ple.com</a>
                         <a href="#">Get Support</a>
@@ -69,7 +69,7 @@ export default function Contact() {
                     </div>
 
                     <div className=" w-2/12 place-items-center flex flex-col p-10 hover:shadow-xl gap-y-5 hover:border">
-                        <img  src="/assets/mail.png" alt="" />
+                        <Image  src="/assets/mail.png" alt="abc" width={72} height={72}/>
                         <a href="#">georgia.young@example.com</a>
                         <a href="#">georgia.young@ple.com</a>
                         <a href="#">Get Support</a>
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
             </div>
             <div className='place-items-center h-[400px] place-content-center space-y-5'>
-                <img  src="/assets/arrow 2.png" alt="" />
+                <Image  src="/assets/arrow 2.png" alt="abc" width={72.56} height={21.84}/>
                 <p className='font-semibold'>WE Can-t WAIT TO MEET YOU</p>
                 <h4 className='font-bold text-6xl'>Lets-s Talk</h4>
                 <button className='bg-blue-500 rounded text-white px-7 py-3 '>Try it for now</button>

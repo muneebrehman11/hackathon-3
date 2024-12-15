@@ -1,11 +1,11 @@
 import { ChevronRight } from 'lucide-react';
-
+import Image from 'next/image';
 const clothImages = [
-    { image: "/assets/col-md-4.png", alt: "img" },
-    { image: "/assets/col-md-6 (2).png", alt: "img" },
-    { image: "/assets/col-md-5.png", alt: "img" },
-    { image: "/assets/col-md-3 (2).png", alt: "img" },
-    { image: "/assets/card-cover-7.png", alt: "img" },
+    { image: "/assets/col-md-4.png", alt: "Image" },
+    { image: "/assets/col-md-6 (2).png", alt: "Image" },
+    { image: "/assets/col-md-5.png", alt: "Image" },
+    { image: "/assets/col-md-3 (2).png", alt: "Image" },
+    { image: "/assets/card-cover-7.png", alt: "Image" },
 ];
 
 const clientsLogos = [
@@ -34,12 +34,13 @@ export default function Shop() {
 
             {/* Clothing Images */}
             <div className="flex flex-wrap justify-center gap-4 py-10">
-                {clothImages.map((img, index) => (
+                {clothImages.map((imgs, index) => (
                     <div key={`cloth-${index}`} className="w-1/2 sm:w-1/3 lg:w-1/6">
-                        <img 
-                            src={img.image}
-                            alt={img.alt}
-                            
+                        <Image
+                            src={imgs.image}
+                            alt={imgs.alt}
+                            width={205}
+                            height={223}
                             // priority={true}
                             className="object-cover w-full h-full"
                         />
@@ -55,18 +56,22 @@ export default function Shop() {
                         <div className="flex space-x-2 items-center">
                             <p className="text-[#737373] font-bold text-sm">Views</p>
                             <button className="p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <img 
+                                <Image
                                     src="/assets/btn-sm-24.png"
-                                    alt=""
-                                    
+                                    alt="abc"
+                                    width={46}
+                                    height={46}
+
                                 />
                             </button>
                             <button className="p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <img
-                                 
+                                <Image
+
                                     src="/assets/btn-sm-24 (1).png"
-                                    alt=""
-                                    
+                                    alt="abc"
+                                    width={46}
+                                    height={46}
+
                                 />
                             </button>
                         </div>
@@ -91,10 +96,12 @@ export default function Shop() {
             <div className="bg-[#FAFAFA] py-10 flex flex-wrap justify-center gap-10">
                 {clientsLogos.map((logo, index) => (
                     <div key={`logo-${index}`} className="w-1/2 sm:w-1/12 md:w-1/12">
-                        <img 
+                        <Image
                             src={logo.image}
                             alt={logo.alt}
-                            
+                            width={153}
+                            height={75}
+
                             // priority={true}
                             className="object-contain"
                         />
@@ -102,72 +109,38 @@ export default function Shop() {
                 ))}
             </div>
 
-            {/* Product Cards */}
-            {/* <div className="mt-5">
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-content-center">
-                    <img src="/assets/col-md-3.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (1).png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (2).png" alt="" className="cursor-pointer" />
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
-                    <img src="/assets/col-md-3.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (1).png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (2).png" alt="" className="cursor-pointer" />
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
-                    <img src="/assets/col-md-3.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (1).png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (2).png" alt="" className="cursor-pointer" />
-                </div>
-            </div> */}
-
-            {/* <div className="mt-5">
-
-                <div className='flex justify-center gap-8'>
-                    <img src="/assets/col-md-3.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (1).png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (2).png" alt="" className="cursor-pointer" />
-                </div>
-                <div className='flex justify-center gap-8'>
-                    <img src="/assets/col-md-3.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (1).png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (2).png" alt="" className="cursor-pointer" />
-                </div>
-                <div className='flex justify-center gap-8'>
-                    <img src="/assets/col-md-3.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card.png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (1).png" alt="" className="cursor-pointer" />
-                    <img src="/assets/Product card (2).png" alt="" className="cursor-pointer" />
-                </div>
-            </div> */}
-            <div className="mt-5">
+            {/* <div className="mt-5"> */}
+            <div className="container mx-auto px-4 place-items-center">
                 {/* First Row of Images */}
-                <div className="flex flex-wrap justify-center gap-8">
-                    <img  src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-5">
+                    <div className="flex justify-center">
+                        <Image src="/assets/col-md-3.png" alt="Product 9" className="cursor-pointer w-full h-auto" width={238} height={488}/>
+                    </div>
+                    <div className="flex justify-center">
+                        <Image src="/assets/Product card.png" alt="Product 10" className="cursor-pointer w-full h-auto" width={238} height={488}/>
+                    </div>
+                    <div className="flex justify-center">
+                        <Image src="/assets/Product card (1).png" alt="Product 11" className="cursor-pointer w-full h-auto" width={238} height={488}/>
+                    </div>
+                    <div className="flex justify-center">
+                        <Image src="/assets/Product card (2).png" alt="Product 12" className="cursor-pointer w-full h-auto" width={238} height={488}/>
+                    </div>
                 </div>
 
                 {/* Second Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
-                    <img  src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Product card.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"width={238} height={488} />
+                    <Image src="/assets/Product card (1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Product card (2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
                 </div>
 
                 {/* Third Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
-                    <img  src="/assets/col-md-3.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card.png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card (1).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
-                    <img  src="/assets/Product card (2).png" alt="" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" />
+                    <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Product card.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Product card (1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Product card (2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
                 </div>
             </div>
 

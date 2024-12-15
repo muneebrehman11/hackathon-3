@@ -1,5 +1,5 @@
 
-
+import Image from "next/image";
 const cientsLogos = [
     {
         image: "/assets/clien1.png",
@@ -53,7 +53,7 @@ export default function About() {
                 {/* Right Section */}
                 {/* <div className="flex-1 flex justify-center relative"> */}
                 <div className="h-[637px] w-6/12 flex items-end ">
-                    <img 
+                    <Image 
                         src="/assets/Component 1.png" // Add the shopping lady image to the public folder
                         alt="Shopping Lady"
                         width={605}
@@ -101,7 +101,7 @@ export default function About() {
 
             {/* video section */}
             <div className="flex justify-center">
-                <img  src="/assets/desktop-video-3.png" alt="" />
+                <Image  src="/assets/desktop-video-3.png" alt="abc" width={989} height={540}/>
             </div>
 
             {/* Meet our team section */}
@@ -119,9 +119,11 @@ export default function About() {
                             {/* Team Member 1 */}
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-[329px] h-[231px]  relative mb-4">
-                                    <img 
+                                    <Image 
                                         src="/assets/team-1-user-1.png" // Replace with your image paths
                                         alt="Team Member 1"
+                                        width={316}
+                                        height={231}
                                         className="rounded-lg object-cover"
                                     />
                                 </div>
@@ -163,9 +165,11 @@ export default function About() {
                             {/* Duplicate similar blocks for additional team members */}
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-[329px] h-[231px]  relative mb-4">
-                                    <img 
+                                    <Image 
                                         src="/assets/media.png" // Replace with your image paths
                                         alt="Team Member 1"
+                                        width={316}
+                                        height={231}
                                         className="rounded-lg object-cover"
                                     />
                                 </div>
@@ -207,9 +211,11 @@ export default function About() {
                             {/* _____________________________________________________ */}
                             <div className="flex flex-col items-center text-center">
                                 <div className=" w-[329px] h-[231px] relative mb-4">
-                                    <img 
+                                    <Image 
                                         src="/assets/team-1-user-3.png" // Replace with your image paths
                                         alt="Team Member 1"
+                                        width={316}
+                                        height={231}
                                         className="rounded-lg object-cover"
                                     />
                                 </div>
@@ -271,7 +277,7 @@ export default function About() {
                     {
                         cientsLogos.map((cimages, i) => (
                             <div key={i} >
-                                <img  src={cimages.image} alt={cimages.alt} />
+                                <Image  src={cimages.image} alt={cimages.alt} width={152} height={75}/>
                             </div>
                         ))
                     }
@@ -298,7 +304,7 @@ export default function About() {
 
                 {/* right */}
                 <div className=" h-[637px] w-4/12 flex items-end bg-[#e7ebee]">
-                    <img  src="/assets/unsplash.png" alt="" />
+                    <Image  src="/assets/unsplash.png" alt="abc" width={590} height={640}/>
                 </div>
             </div>
         </div>
