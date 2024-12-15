@@ -25,7 +25,7 @@ export default function Hero2() {
           {/* Right Section with Image  */}
           <div className="lg:w-1/2 flex justify-center mb-[-93px]">
             <Image 
-              src="/assets/col-md-6 (1).png"
+              src="/assets/col-md-6(1).png"
               alt="New Collection"
               width={443} height={685}
               className="max-w-full h-auto object-contain"

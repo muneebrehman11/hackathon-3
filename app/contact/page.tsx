@@ -18,10 +18,10 @@ export default function Contact() {
                     <p>Phone: +451 215 215</p>
                     <p>Fax: +451 215 215</p>
                     <div className='flex gap-3 py-5' >
-                        <Image  src="/assets/Vector (2).png" alt="abc" width={29.98} height={29.98}/>
+                        <Image  src="/assets/Vector(2).png" alt="abc" width={29.98} height={29.98}/>
                         <Image  src="/assets/logos_facebook.png" alt="abc" width={29.98} height={29.98}/>
-                        <Image  src="/assets/Vector (3).png" alt="abc" width={29.98} height={29.98}/>
-                        <Image  src="/assets/Vector (4).png" alt="abc" width={29.98} height={29.98}/>
+                        <Image  src="/assets/Vector(3).png" alt="abc" width={29.98} height={29.98}/>
+                        <Image  src="/assets/Vector(4).png" alt="abc" width={29.98} height={29.98}/>
                     </div>
                 </div>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
             </div>
             <div className='place-items-center h-[400px] place-content-center space-y-5'>
-                <Image  src="/assets/arrow 2.png" alt="abc" width={72.56} height={21.84}/>
+                <Image  src="/assets/arrow2.png" alt="abc" width={72.56} height={21.84}/>
                 <p className='font-semibold'>WE Can-t WAIT TO MEET YOU</p>
                 <h4 className='font-bold text-6xl'>Lets-s Talk</h4>
                 <button className='bg-blue-500 rounded text-white px-7 py-3 '>Try it for now</button>

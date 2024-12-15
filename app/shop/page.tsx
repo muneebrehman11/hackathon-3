@@ -2,9 +2,9 @@ import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 const clothImages = [
     { image: "/assets/col-md-4.png", alt: "Image" },
-    { image: "/assets/col-md-6 (2).png", alt: "Image" },
+    { image: "/assets/col-md-6(2).png", alt: "Image" },
     { image: "/assets/col-md-5.png", alt: "Image" },
-    { image: "/assets/col-md-3 (2).png", alt: "Image" },
+    { image: "/assets/col-md-3(2).png", alt: "Image" },
     { image: "/assets/card-cover-7.png", alt: "Image" },
 ];
 
@@ -67,7 +67,7 @@ export default function Shop() {
                             <button className="p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <Image
 
-                                    src="/assets/btn-sm-24 (1).png"
+                                    src="/assets/btn-sm-24(1).png"
                                     alt="abc"
                                     width={46}
                                     height={46}
@@ -117,30 +117,30 @@ export default function Shop() {
                         <Image src="/assets/col-md-3.png" alt="Product 9" className="cursor-pointer w-full h-auto" width={238} height={488}/>
                     </div>
                     <div className="flex justify-center">
-                        <Image src="/assets/Product card.png" alt="Product 10" className="cursor-pointer w-full h-auto" width={238} height={488}/>
+                        <Image src="/assets/Productcard.png" alt="Product 10" className="cursor-pointer w-full h-auto" width={238} height={488}/>
                     </div>
                     <div className="flex justify-center">
-                        <Image src="/assets/Product card (1).png" alt="Product 11" className="cursor-pointer w-full h-auto" width={238} height={488}/>
+                        <Image src="/assets/Productcard(1).png" alt="Product 11" className="cursor-pointer w-full h-auto" width={238} height={488}/>
                     </div>
                     <div className="flex justify-center">
-                        <Image src="/assets/Product card (2).png" alt="Product 12" className="cursor-pointer w-full h-auto" width={238} height={488}/>
+                        <Image src="/assets/Productcard(2).png" alt="Product 12" className="cursor-pointer w-full h-auto" width={238} height={488}/>
                     </div>
                 </div>
 
                 {/* Second Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
                     <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Product card.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"width={238} height={488} />
-                    <Image src="/assets/Product card (1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Product card (2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Productcard.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"width={238} height={488} />
+                    <Image src="/assets/Productcard(1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Productcard(2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
                 </div>
 
                 {/* Third Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
                     <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Product card.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Product card (1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Product card (2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Productcard.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Productcard(1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/Productcard(2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
                 </div>
             </div>
 

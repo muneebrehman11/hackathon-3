@@ -54,7 +54,7 @@ export default function About() {
                 {/* <div className="flex-1 flex justify-center relative"> */}
                 <div className="h-[637px] w-6/12 flex items-end ">
                     <Image 
-                        src="/assets/Component 1.png" // Add the shopping lady image to the public folder
+                        src="/assets/Component1.png" // Add the shopping lady image to the public folder
                         alt="Shopping Lady"
                         width={605}
                         height={668}

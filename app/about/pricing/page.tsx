@@ -62,7 +62,7 @@ export default function Pricing() {
                     <button className="w-28 h-10 bg-gray-300 hover:bg-blue-100 rounded-full text-black hover:text-blue-800 font-semibold">Save 25%</button>
                 </div>
                 <div className="flex justify-center">
-                    <Image src='/assets/row (3).png' alt={'a'}  width={985} height={704} />
+                    <Image src='/assets/row(3).png' alt={'a'}  width={985} height={704} />
                 </div>
 
                 {/* Clients Section */}
@@ -139,10 +139,10 @@ export default function Pricing() {
                     Try it for now
                 </button>
                 <div className="flex gap-3 py-5">
-                    <Image src="/assets/Vector (2).png" alt="abc" width={29.98} height={29.98}/>
+                    <Image src="/assets/Vector(2).png" alt="abc" width={29.98} height={29.98}/>
                     <Image src="/assets/logos_facebook.png" alt="abc" width={29.98} height={29.98}/>
-                    <Image src="/assets/Vector (3).png" alt="abc" width={29.98} height={29.98}/>
-                    <Image src="/assets/Vector (4).png" alt="abc" width={29.98} height={29.98}/>
+                    <Image src="/assets/Vector(3).png" alt="abc" width={29.98} height={29.98}/>
+                    <Image src="/assets/Vector(4).png" alt="abc" width={29.98} height={29.98}/>
                 </div>
             </div>
         </section>

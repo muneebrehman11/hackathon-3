@@ -77,7 +77,7 @@ export default function Hero() {
               </div>
               <div>
                 <Image
-                  src="/assets/media bg-cover.png"
+                  src="/assets/mediabg-cover.png"
                   alt="Editor's Pick 4"
                   width={239}
                   height={500}

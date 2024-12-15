@@ -9,7 +9,7 @@ const images = [
     title: "fixed height",
   },
   {
-    src: "/assets/fixed-height (1)",
+    src: "/assets/fixed-height(1)",
     title: "fixed height",
   },
   {
