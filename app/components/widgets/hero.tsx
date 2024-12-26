@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-center justify-center text-center  bg-[#00b0d7]">
         <Image
-          src="/images/hero-img.png"
+          src="/assets/hero-img.png"
           alt="Hero Background"
           width={1440}
           height={716}
@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row  gap-5 justify-center place-items-center">
             <div>
               <Image
-                src="/public/images/col-md-6.png"
+                src="/assets/col-md-6.png"
                 alt="Editor's Pick 1"
                 width={509}
                 height={500}
@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
             <div>
               <Image
-                src="/public/images/card-item.png"
+                src="/assets/card-item.png"
                 alt="Editor's Pick 2"
                 width={239}
                 height={500}
@@ -66,7 +66,7 @@ export default function Hero() {
             <div className="space-y-4">
               <div>
                 <Image
-                  src="/public/images/filter.png"
+                  src="/assets/filter.png"
                   alt="Editor's Pick 3"
                   width={239}
                   height={500}
@@ -74,7 +74,7 @@ export default function Hero() {
               </div>
               <div>
                 <Image
-                  src="/public/images/mediabg-cover.png"
+                  src="/assets/mediabg-cover.png"
                   alt="Editor's Pick 4"
                   width={239}
                   height={500}
