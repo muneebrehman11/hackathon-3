@@ -15,11 +15,13 @@ export default function Header() {
       {/* Top Bar */}
       <div className="flex justify-between items-center py-4 px-6 sm:px-10 max-w-screen-2xl mx-auto">
         {/* Logo */}
+        <Link href="/">
         <h1 className="text-xl font-bold text-gray-800">Bandage</h1>
+        </Link>
 
         {/* Hamburger Menu for Small Screens */}
         <button
-          className="sm:hidden text-gray-800"
+          className="md:hidden text-gray-800 "
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -27,7 +29,7 @@ export default function Header() {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden sm:flex space-x-6 items-center">
+        <nav className="hidden md:flex md:space-x-2 lg:space-x-6 items-center">
           <Link href={"/"} className="text-gray-700 text-sm font-semibold hover:text-gray-900">
             Home
           </Link>
@@ -43,13 +45,13 @@ export default function Header() {
           <Link href={"/contact"} className="text-gray-700 text-sm font-semibold hover:text-gray-900">
             Contact
           </Link>
-          <Link href={"/pages"} className="text-gray-700 text-sm font-semibold hover:text-gray-900">
+          <Link href={"/product"} className="text-gray-700 text-sm font-semibold hover:text-gray-900">
             Pages
           </Link>
         </nav>
 
         {/* Right Section */}
-        <div className="hidden sm:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6">
           {/* Login/Register */}
           <div className="flex items-center space-x-1 text-blue-500">
             <User />
@@ -74,7 +76,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="sm:hidden bg-gray-100 py-4">
+        <nav className="md:hidden bg-gray-100 py-4">
           <ul className="flex flex-col items-center space-y-4">
             <Link href={"/"} onClick={toggleMenu} className="text-gray-700 text-sm font-semibold hover:text-gray-900">
               Home

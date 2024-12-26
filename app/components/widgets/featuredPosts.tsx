@@ -34,7 +34,7 @@ export default function FeaturedPosts() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Post Card */}
         {images.map((_, i) => (
-          <div key={i} className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+          <div key={i} className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 ">
             <div className="relative">
               <Image 
                 src={`${images[i].src}.png`} // Ensure the images are correctly placed in the public folder

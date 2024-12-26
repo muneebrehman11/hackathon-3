@@ -1,11 +1,11 @@
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 const clothImages = [
-    { image: "/assets/col-md-4.png", alt: "Image" },
-    { image: "/assets/col-md-6(2).png", alt: "Image" },
-    { image: "/assets/col-md-5.png", alt: "Image" },
-    { image: "/assets/col-md-3(2).png", alt: "Image" },
-    { image: "/assets/card-cover-7.png", alt: "Image" },
+    { image: "/assets/col-md-4.jpg", alt: "Image" },
+    { image: "/assets/col-md-6(2).jpg", alt: "Image" },
+    { image: "/assets/col-md-5.jpg", alt: "Image" },
+    { image: "/assets/col-md-3(2).jpg", alt: "Image" },
+    { image: "/assets/card-cover-7.jpg", alt: "Image" },
 ];
 
 const clientsLogos = [
@@ -19,9 +19,9 @@ const clientsLogos = [
 
 export default function Shop() {
     return (
-        <section>
+        <section >
             {/* Header Section */}
-            <div className="flex justify-between px-10 sm:px-[270px] max-w-screen-2xl mx-auto">
+            <div className="flex justify-between px-10 sm:px-[270px] max-w-screen-2xl mx-auto mt-5">
                 <h1 className="font-bold text-2xl">Shop</h1>
                 <div className="flex items-center gap-2">
                     <button className="text-[14px] font-bold">Home</button>
@@ -34,19 +34,24 @@ export default function Shop() {
 
             {/* Clothing Images */}
             <div className="flex flex-wrap justify-center gap-4 py-10">
+            {/* <div className="mt-10 flex justify-center items-center gap-2 flex-wrap">
+            <div className='relative group w-full sm:w-[calc(20%-1rem)] md:w-[calc(20%-1rem)]'> */}
                 {clothImages.map((imgs, index) => (
-                    <div key={`cloth-${index}`} className="w-1/2 sm:w-1/3 lg:w-1/6">
+                    <div key={`cloth-${index}`} className=" w-1/2 sm:w-1/3 lg:w-1/6 flex relative group">
                         <Image
                             src={imgs.image}
                             alt={imgs.alt}
-                            width={205}
+                            width={240}
                             height={223}
                             // priority={true}
-                            className="object-cover w-full h-full"
+                            className="object-cover w-full h-full "
                         />
+                        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-[#FFFFFF] transition-opacity duration-300"><h3 className="text-[16px] font-bold">Unique Designs </h3><p className="text-[14px]">Explore it Now</p></div>
+                       
                     </div>
                 ))}
-            </div>
+            {/* </div> */}
+             </div>
 
             {/* Filter Section */}
             <div className="bg-white py-4 shadow-sm px-10 sm:px-[270px] max-w-screen-2xl mx-auto">
@@ -93,64 +98,48 @@ export default function Shop() {
             </div>
 
             {/* Clients Logos */}
-            <div className="bg-[#FAFAFA] py-10 flex flex-wrap justify-center gap-10">
-                {clientsLogos.map((logo, index) => (
-                    <div key={`logo-${index}`} className="w-1/2 sm:w-1/12 md:w-1/12">
-                        <Image
-                            src={logo.image}
-                            alt={logo.alt}
-                            width={153}
-                            height={75}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-14 my-10">
+                              {
+                                  clientsLogos.map((cimages, i) => (
+                                      <div key={i} >
+                                          <Image src={cimages.image} alt={cimages.alt} width={100} height={50} />
+                                      </div>
+                                  ))
+                              }
+                          </div>
 
-                            // priority={true}
-                            className="object-contain"
-                        />
-                    </div>
-                ))}
-            </div>
 
             {/* <div className="mt-5"> */}
             <div className="container mx-auto px-4 place-items-center">
                 {/* First Row of Images */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-5">
-                    <div className="flex justify-center">
-                        <Image src="/assets/col-md-3.png" alt="Product 9" className="cursor-pointer w-full h-auto" width={238} height={488}/>
-                    </div>
-                    <div className="flex justify-center">
-                        <Image src="/assets/Productcard.png" alt="Product 10" className="cursor-pointer w-full h-auto" width={238} height={488}/>
-                    </div>
-                    <div className="flex justify-center">
-                        <Image src="/assets/Productcard(1).png" alt="Product 11" className="cursor-pointer w-full h-auto" width={238} height={488}/>
-                    </div>
-                    <div className="flex justify-center">
-                        <Image src="/assets/Productcard(2).png" alt="Product 12" className="cursor-pointer w-full h-auto" width={238} height={488}/>
-                    </div>
+                    <Image src="/assets/col-md-3.png" alt="Product 9" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard.png" alt="Product 10" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard(1).png" alt="Product 11" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard(2).png" alt="Product 12" className="cursor-pointerhover:shadow-md hover:border" width={238} height={488} />
                 </div>
 
                 {/* Second Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
-                    <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Productcard.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"width={238} height={488} />
-                    <Image src="/assets/Productcard(1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Productcard(2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard.png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard(1).png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard(2).png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
                 </div>
 
                 {/* Third Row of Images */}
                 <div className="flex flex-wrap justify-center gap-8 mt-5">
-                    <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Productcard.png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Productcard(1).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
-                    <Image src="/assets/Productcard(2).png" alt="abc" className="cursor-pointer w-1/3 sm:w-1/4 md:w-1/5" width={238} height={488}/>
+                    <Image src="/assets/col-md-3.png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard.png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard(1).png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
+                    <Image src="/assets/Productcard(2).png" alt="abc" className="cursor-pointer hover:shadow-md hover:border" width={238} height={488} />
                 </div>
             </div>
 
             {/* Pagination */}
             <div className="p-4 bg-gray-100 rounded-md shadow">
                 <div className="flex items-center justify-center rounded-md">
-                    <button
-                        className="px-4 py-2 text-gray-400 bg-white border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none"
-                        disabled
-                    >
+                    <button className="px-4 py-2 text-gray-400 bg-white border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none">
                         First
                     </button>
                     <button className="w-10 h-10 text-blue-500 hover:text-white border border-gray-300 rounded-md hover:bg-blue-500 focus:outline-none">

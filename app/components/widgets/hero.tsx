@@ -1,18 +1,16 @@
-
+import Link from "next/link";
 import Image from "next/image";
 export default function Hero() {
   return (
     <section>
       {/* Hero Section */}
-      <div className="min-h-screen flex items-center justify-center relative">
+      <div className="flex flex-col md:flex-row items-center justify-center text-center  bg-[#00b0d7]">
         <Image
-          src="/assets/shop-hero-1-product-slide-1.jpg"
+          src="/assets/hero-img.png"
           alt="Hero Background"
           width={1440}
           height={716}
-
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" />
 
         <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl px-6 lg:px-12 z-10 absolute">
           <div className="lg:w-1/2 text-center lg:text-left space-y-4">
@@ -25,9 +23,11 @@ export default function Hero() {
             <p className="text-sm md:text-base lg:text-lg text-white leading-relaxed">
               We know how large objects will act, but things on a small scale.
             </p>
-            <button className="px-6 md:px-8 py-2 md:py-3 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition">
-              Shop Now
-            </button>
+            <Link href="/shop">
+              <button className="px-6 md:px-8 py-2  md:py-3 my-5  bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition">
+                Shop Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -46,15 +46,14 @@ export default function Hero() {
           </div>
 
           {/* Content */}
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  bg-green-400"> */}
-            <div className="flex gap-5 justify-center ">
+          <div className="flex flex-col md:flex-row  gap-5 justify-center place-items-center">
             <div>
               <Image
                 src="/assets/col-md-6.png"
                 alt="Editor's Pick 1"
                 width={509}
                 height={500}
-                className="h-full object-cover" />
+                className="h-full object-cover  " />
             </div>
             <div>
               <Image
@@ -62,7 +61,6 @@ export default function Hero() {
                 alt="Editor's Pick 2"
                 width={239}
                 height={500}
-                // className="w-full  h-auto max-w-[300px] sm:max-w-[350px] md:max-w-[400px]"
               />
             </div>
             <div className="space-y-4">
@@ -72,7 +70,6 @@ export default function Hero() {
                   alt="Editor's Pick 3"
                   width={239}
                   height={500}
-                  // className="w-full h-auto max-w-[300px] sm:max-w-[350px] md:max-w-[400px]"
                 />
               </div>
               <div>
@@ -81,7 +78,6 @@ export default function Hero() {
                   alt="Editor's Pick 4"
                   width={239}
                   height={500}
-                  // className="w-full h-auto max-w-[300px] sm:max-w-[350px] md:max-w-[400px] "
                 />
               </div>
             </div>

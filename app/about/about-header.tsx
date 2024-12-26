@@ -43,9 +43,11 @@ export default function AboutHeader() {
         <Link href="/">
           <li className="hover:text-gray-900 cursor-pointer text-center sm:text-left">Home</li>
         </Link>
-        <div className="flex items-center">
+        {/* <div className="flex items-center"> */}
+        <Link href='/product'>
           <button className="dropbtn text-center sm:text-left">Product</button>
-        </div>
+        </Link>
+        {/* </div> */}
         <Link href="/about/pricing">
           <li className="hover:text-gray-900 cursor-pointer text-center sm:text-left">Pricing</li>
         </Link>
@@ -61,7 +63,7 @@ export default function AboutHeader() {
           <a href="#" className="hover:underline">
             Login
           </a>
-          <button className="px-8 py-3 bg-blue-500 text-white font-medium rounded hover:bg-green-600 transition">
+          <button className="px-8 py-3 bg-blue-500 text-white font-medium rounded hover:bg-blue-700 transition">
             Become a Member
           </button>
         </div>

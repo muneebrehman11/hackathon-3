@@ -1,9 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+/* *{
+  margin-
+} */
 body {
+  /* margin: 0;
+  padding: 0;
+  overflow-x: hidden; */
   font-family: Arial, Helvetica, sans-serif;
+  /* display: block; */
 }
 
 @layer base {
@@ -69,4 +75,4 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-} */
+}

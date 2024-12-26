@@ -7,11 +7,14 @@ import FeaturedPosts from "./components/widgets/featuredPosts";
 export default function Home(){
   return(
     <main>
+      <div>
+
       <Hero/>
       <HomePage/>
       {/* <BestSeller/> */}
       <Hero2/>
       <FeaturedPosts/>
+      </div>
    
     </main>
   )

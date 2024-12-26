@@ -103,11 +103,11 @@ export default function Footer() {
                 placeholder="Your Email"
                 className="w-full sm:w-[240px] h-[58px] border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <button
+              {/* <button
                 type="submit"
                 className="h-[58px] bg-blue-500 text-white px-6 rounded-md hover:bg-blue-600 w-full sm:w-auto">
                 Subscribe
-              </button>
+              </button> */}
             </form>
             <p className="text-gray-500 mt-4 text-sm">Lorem ipsum dolor Amit.</p>
           </div>
