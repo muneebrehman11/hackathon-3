@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
 
         {/* Links Section */}
-        <div className="py-20 px-6 sm:px-12 lg:px-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 text-gray-700">
+        <div className="py-20 px-4 sm:px-12 lg:px-36 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 text-gray-700 mr-5">
           {/* Column 1 */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Company Info</h3>
@@ -97,17 +97,17 @@ export default function Footer() {
           {/* Column 5 - Get in Touch */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Get in Touch</h3>
-            <form className="flex flex-col sm:flex-row items-center max-w-md mx-auto gap-4">
+            <form className="flex flex-col sm:flex-row items-center max-w-md mx-auto ">
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full sm:w-[240px] h-[58px] border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className=" w-full sm:w-[240px] h-[58px] border rounded-lg px-2 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              {/* <button
+              <button
                 type="submit"
-                className="h-[58px] bg-blue-500 text-white px-6 rounded-md hover:bg-blue-600 w-full sm:w-auto">
+                className="  h-[58px] bg-blue-500 text-white px-3 rounded-md hover:bg-blue-600 w-full sm:w-auto">
                 Subscribe
-              </button> */}
+              </button>
             </form>
             <p className="text-gray-500 mt-4 text-sm">Lorem ipsum dolor Amit.</p>
           </div>
