@@ -28,6 +28,7 @@ const cientsLogos = [
     alt: "clients"
   },
 ]
+
 export default function Product() {
   return (
     <div >
@@ -164,7 +165,7 @@ export default function Product() {
           BESTSELLER PRODUCTS
         </h1>
         <div className='grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-4  place-content-center px-24 place-items-center gap-5'>
-          <div className='bg-white w-[239px] hover:shadow-md hover:border'>
+          <div className='bg-white w-[239px] hover:shadow-sm hover:border rounded'>
             <Image src='/assets/crockery1.png' alt='crokery' width={239} height={280} />
             <div className='ml-4 py-6 leading-9'>
               <h3 className='font-semibold'>Graphic Design</h3>

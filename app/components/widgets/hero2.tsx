@@ -4,7 +4,7 @@ export default function Hero2() {
   return (
     <section>
       {/* Hero Section */}
-      <div className=" flex items-center justify-center bg-[#23856D] ">
+      <div className=" flex items-center justify-center bg-[#23856D] mt-5">
         {/* Left Section */}
         <div className="pt-10 flex flex-col  lg:flex-row items-center w-full max-w-7xl px-6 lg:px-12 gap-10">
           <div className="lg:w-1/2 text-center lg:text-left">

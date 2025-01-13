@@ -1,8 +1,8 @@
 import Hero from "./components/widgets/hero";
-import HomePage from "@/app/components/widgets/bestSeller";
+// import HomePage from "@/app/components/homeProducts/bestSeller";
 import Hero2 from "./components/widgets/hero2";
 import FeaturedPosts from "./components/widgets/featuredPosts";
-
+import BestSeller from "@/app/components/widgets/bestSeller";
 
 export default function Home(){
   return(
@@ -10,11 +10,12 @@ export default function Home(){
       <div>
 
       <Hero/>
-      <HomePage/>
-      {/* <BestSeller/> */}
+      <BestSeller/>
       <Hero2/>
       <FeaturedPosts/>
+      
       </div>
+
    
     </main>
   )

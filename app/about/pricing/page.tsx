@@ -51,7 +51,7 @@ export default function Pricing() {
                     <h2 className="font-bold text-[40px] sm:text-[36px] md:text-[40px] lg:text-[45px]">
                         Pricing
                     </h2>
-                    <p className="w-[463px] text-sm text-slate-400 font-medium sm:w-[80%] md:w-[70%]">
+                    <p className="w-[463px] text-sm text-slate-400 font-medium sm:w-[80%] md:w-[70%] text-center mx-auto">
                         Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
                     </p>
                 </div>
