@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import heroImg from "@/public/assets/hero-img.png"
 export default function Hero() {
   return (
     <section>
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-center justify-center text-center  bg-[#00b0d7]">
         <Image
-          src="/assets/hero-img.png"
+          src={heroImg}
           alt="Hero Background"
           width={1440}
           height={716}
