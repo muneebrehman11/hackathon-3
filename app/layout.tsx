@@ -4,6 +4,7 @@ import "./globals.css";
 import HideLayout from "./hide-layout";
 import Sale from "./components/layout/salePoster";
 import Footer from "./components/layout/footer";
+import { CartProvider } from "@/app/context/CartContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,10 +27,13 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
     <html lang="eu">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-screen-2xl mx-auto`}  >
+        <CartProvider>
         <Sale/>
         <HideLayout/>
+
         {children}
         <Footer/>
+        </CartProvider>
       </body>
     </html>
   );

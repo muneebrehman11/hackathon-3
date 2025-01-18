@@ -2,9 +2,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Search, ShoppingCart, Heart, User, ChevronDown, Menu, X } from "lucide-react";
+import { useCart } from "@/app/context/CartContext";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { totalQuantity } = useCart();
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -16,7 +19,7 @@ export default function Header() {
       <div className="flex justify-between items-center py-4 px-6 sm:px-10 max-w-screen-2xl mx-auto">
         {/* Logo */}
         <Link href="/">
-        <h1 className="text-xl font-bold text-gray-800">Bandage</h1>
+          <h1 className="text-xl font-bold text-gray-800">Bandage</h1>
         </Link>
 
         {/* Hamburger Menu for Small Screens */}
@@ -64,9 +67,18 @@ export default function Header() {
             <span className="cursor-pointer hover:text-blue-700">
               <Search />
             </span>
-            <span className="cursor-pointer hover:text-blue-700">
+
+            {/* <span className="cursor-pointer hover:text-blue-700">
               <ShoppingCart />
-            </span>
+            </span> */}
+            <Link href="/cart" className="relative">
+              <ShoppingCart className="text-2xl" />
+              {totalQuantity > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                  {totalQuantity}
+                </span>
+              )}
+            </Link>
             <span className="cursor-pointer hover:text-blue-700">
               <Heart />
             </span>

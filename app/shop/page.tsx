@@ -2,7 +2,6 @@ import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { client } from '@/sanity/lib/client';
-import { urlFor } from '@/sanity/lib/image';
 const clothImages = [
     { image: "/assets/col-md-4.jpg", alt: "Image" },
     { image: "/assets/col-md-6(2).jpg", alt: "Image" },
@@ -20,28 +19,35 @@ const clientsLogos = [
     { image: "/assets/clien6.png", alt: "clients6" },
 ];
 
-interface Data {
-    _id: string;
-    name: string;
-    title: string;
-    price_before: number;
-    price_after: number;
+type Product = {
     imageUrl: string;
-  }
+    price: number;
+    tags: string[];
+    dicountPercentage: number;
+    description: string;
+    isNew: boolean;
+    _id: string;
+    title: string;
+  };
   
 
+
 export default async function Shop() {
-    const res = await client.fetch(
-        `*[_type == "shop_products"]{
+    const res = await client.fetch(`*[_type == "product"] {
   _id,
-  name,
   title,
-  price_before,
-  price_after,
-  "imageUrl" : image.asset->url
-}
-`
-    )
+  price,
+  "imageUrl": productImage.asset->url,
+  tags,
+  dicountPercentage,
+  description,
+  isNew
+}`)
+
+
+    console.log(res)
+    console.log(process.env.NEXT_PUBLIC_SANITY_API_TOKEN,);
+
     return (
         <section >
             {/* Header Section */}
@@ -132,40 +138,54 @@ export default async function Shop() {
                 }
             </div>
 
-
             {/* <div className="mt-5"> */}
             <div className='mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center '>
 
                 {
-                    res.map((data: Data) =>
+                    res.map((data: Product) =>
                         <Link href={`/shop/${data._id}`} key={res._id} >
-                        <div  className=' max-w-[239px] text-center leading-8 cursor-pointer hover:scale-105 hover:shadow-md active:scale-100  duration-500  mt-8 object-contain'>
-                            <Image src={urlFor(data.imageUrl).url()} alt={data.name} width={239} height={300} />
-                            <div className='  my-4'>
-                                <p className='font-bold text-sm hover:text-red-600'>{data.name}</p>
-                                <p className='font-semibold text-slate-500cursor-none'>{data.title}</p>
-                                <p className=' font-bold space-x-2'>
-                                    <span className='text-slate-400 line-through'>{data.price_before} </span>
-                                    <span className='text-green-600 '>{data.price_after}</span>
-                                </p>
+
+                            <div key={res._id} className=' max-w-[239px] text-center leading-8 cursor-pointer hover:scale-105 hover:shadow-md active:scale-100  duration-500  my-8 object-contain '>
+                                {/* <Image src={urlFor(data.imageUrl).url()} alt={data.name} width={239} height={300} /> */}
+                                <div className='w-[239px] h-[300px] overflow-hidden relative '>
+                                    <button className={`bg-green-500 hover:bg-opacity-90 inline-block absolute left-1 top-1 w-14 bg-opacity-70 rounded-sm text-white  ${data.isNew == true ? 'black' : 'hidden'}`}>
+                                        new
+                                    </button>
+                                    <Image src={data.imageUrl} alt={data.title} width={239} height={300} />
+                                </div>
+                                <div className='my-5'>
+                                    <p className='font-bold font-mono text-lg hover:text-red-600'>{data.title}</p>
+                                    <p className='font-semibold text-slate-500 cursor-none'>{"our top products"}</p>
+                                    <p className=' font-bold space-x-2'>
+                                        <span className='text-slate-400 line-through'>{`$${data.price}`} </span>
+                                        <span className='text-green-600'>{`$${data.dicountPercentage}`}</span>
+                                    </p>
+
+                                </div>
+                                <div className='flex gap-2 justify-center pb-8 '>
+                                    <div className='w-[20px] h-[20px] rounded-full bg-blue-400 cursor-pointer hover:border-2 border-blue-600'> </div>
+                                    <div className='w-[20px] h-[20px] rounded-full bg-green-400 cursor-pointer hover:border-2 border-green-600'> </div>
+                                    <div className='w-[20px] h-[20px] rounded-full bg-orange-400 cursor-pointer hover:border-2 border-orange-600'> </div>
+                                    <div className='w-[20px] h-[20px] rounded-full bg-black cursor-pointer hover:border-black'> </div>
+                                </div>
                             </div>
-                            <div className='flex gap-1 justify-center mb-6 '>
-                                <div className='w-[15px] h-[15px] rounded-full bg-blue-400 cursor-pointer'> </div>
-                                <div className='w-[15px] h-[15px] rounded-full bg-green-400 cursor-pointer'> </div>
-                                <div className='w-[15px] h-[15px] rounded-full bg-orange-400 cursor-pointer'> </div>
-                                <div className='w-[15px] h-[15px] rounded-full bg-black cursor-pointer'> </div>
-                            </div>
-                        </div>
                         </Link>
 
 
                     )
 
+
+                }
+                {console.log('asdf:', res._id)
                 }
             </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+
+            </div>
+
 
             {/* Pagination */}
-            <div className="p-4 bg-gray-100 rounded-md shadow mt-5">
+            < div className="p-4 bg-gray-100 rounded-md shadow mt-5">
                 <div className="flex items-center justify-center rounded-md">
                     <button className="px-4 py-2 text-gray-400 bg-white border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none">
                         First
@@ -187,6 +207,7 @@ export default async function Shop() {
 
 
         </section>
+
     );
 }
 
