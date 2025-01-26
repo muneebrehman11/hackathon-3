@@ -37,15 +37,15 @@ export default function About() {
             <div className="flex flex-col md:flex-row justify-center  ">
                 {/* Left Section */}
                 {/* <div className=" flex flex-col text-left leading-10 w-6/12 "> */}
-                <div className=" w-6/12 flex flex-col justify-center items-center leading-10 ">
-                    <h2 className="text-base text-black font-bold uppercase">
+                <div className=" w-6/12 flex flex-col justify-center ml-32  leading-10 ">
+                    <h2 className="text-xl text-black font-bold uppercase">
                         About Company
                     </h2>
-                    <h1 className="text-6xl font-semibold text-gray-900 mt-2">About Us</h1>
+                    <h1 className="text-7xl font-semibold text-gray-900 mt-2">About Us</h1>
                     <p className="mt-4 text-gray-600">
                         We know how large objects will act, <br /> but things on a small scale.
                     </p>
-                    <button className="mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 ">
+                    <button className=" mt-5 w-36 bg-blue-500 text-white rounded hover:bg-blue-600 ">
                         Get Quote Now
                     </button>
                 </div>

@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "import-data": "node scripts/importData.js",
-    "type":"module"
+    "type": "module"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.9.15",
     "@heroicons/react": "^2.2.0",
     "@sanity/client": "^6.25.0",
     "@sanity/icons": "^3.5.7",
@@ -25,20 +26,23 @@
     "lucide-react": "^0.468.0",
     "next": "^15.1.0",
     "next-sanity": "^9.8.38",
+    "openai": "^4.79.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fontawesome": "^1.7.1",
     "react-icons": "^5.4.0",
     "sanity": "^3.70.0",
+    "shipengine": "^1.0.7",
     "simple-icons": "^13.20.0",
+    "stripe": "^17.5.0",
     "styled-components": "^6.1.14",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
     "postcss": "^8",

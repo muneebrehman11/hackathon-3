@@ -12,7 +12,7 @@ export default function AboutHeader() {
   };
 
   return (
-    <header className="sticky top-0  z-10 flex justify-between items-center py-4 bg-white border-b shadow-sm px-10 sm:px-12 max-w-screen-2xl mx-auto z-20">
+    <header className="sticky top-0  font-bold flex justify-between items-center py-4 bg-white border-b shadow-sm px-10 sm:px-12 max-w-screen-2xl mx-auto z-20">
       {/* Logo Section */}
       <h1 className="text-xl font-bold text-gray-800">Bandage</h1>
 
@@ -41,7 +41,7 @@ export default function AboutHeader() {
         className={`list-none sm:flex space-x-6 text-gray-700 text-sm absolute sm:relative bg-white sm:bg-transparent w-full sm:w-auto top-16 left-0 sm:top-0 sm:flex-row flex-col sm:space-x-6 space-y-4 sm:space-y-0 transition-all duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'} sm:block`}
       >
         <Link href="/">
-          <li className="hover:text-gray-900 cursor-pointer text-center sm:text-left">Home</li>
+          <li className="hover:text-gray-500 cursor-pointer text-center sm:text-left">Home</li>
         </Link>
         {/* <div className="flex items-center"> */}
         <Link href='/product'>

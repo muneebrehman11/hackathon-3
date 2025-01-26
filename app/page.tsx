@@ -27,7 +27,6 @@ export default async function Home() {
         <BestSeller />
         <Hero2 />
         <FeaturedPosts />
-        
 
       </div>
 
@@ -35,3 +34,4 @@ export default async function Home() {
     </main>
   )
 }
+

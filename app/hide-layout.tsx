@@ -10,12 +10,12 @@ import { usePathname } from "next/navigation";
 export default function HideLayout() {
   const pathname = usePathname();
   return (
-    
+
     <>
-    
-    {/* <Header/> */}
-    {pathname !== "/about" && pathname !== "/about/pricing" && <Header />}
-   
+
+      {/* <Header/> */}
+      {pathname !== "/about" && pathname !== "/about/pricing" && <Header />}
+
     </>
   );
 }
