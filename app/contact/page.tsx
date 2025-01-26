@@ -255,9 +255,9 @@ export default function Contact() {
           height={22}
           className="hover:opacity-80 cursor-pointer"
         />
-        <p className="font-semibold text-gray-600">WE CAN'T WAIT TO MEET YOU</p>
+        <p className="font-semibold text-gray-600">WE CAN&apos;T WAIT TO MEET YOU</p>
         <h4 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900">
-          Let's Talk
+          Let&apos;s Talk
         </h4>
         <button className="bg-blue-500 rounded text-white px-8 py-3 hover:bg-blue-600 transition-all">
           Try it for now

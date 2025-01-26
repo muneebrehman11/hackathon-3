@@ -138,7 +138,7 @@ export default function Hero() {
           {/* Title */}
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
-              EDITOR'S PICK
+              EDITOR&apos;S PICK
             </h2>
             <p className="text-sm sm:text-base text-gray-500 mt-2">
               Problems trying to resolve the conflict between

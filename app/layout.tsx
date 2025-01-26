@@ -13,7 +13,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { SearchProvider } from "./context/SearchContext";
 const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 // publishableKey = { process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }
-const secretKey = process.env.CLERK_SECRET_KEY;
+// const secretKey = process.env.CLERK_SECRET_KEY;
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
