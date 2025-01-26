@@ -273,7 +273,6 @@ export default async function ProductDetails({ params }: ProductDetailsParams) {
         title,
         price,
         imageUrl,
-        tags,
         discountPercentage,
         description,
         isNew,
