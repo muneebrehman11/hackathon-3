@@ -10,9 +10,10 @@ import Footer from "./components/layout/footer";
 import { CartProvider } from "@/app/context/CartContext";
 import { WishlistProvider } from "./context/WishlistContext";
 import { ClerkProvider } from "@clerk/nextjs";
-import { SearchProvider } from "./context/SearchContext"; 
+import { SearchProvider } from "./context/SearchContext";
 const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
-
+// publishableKey = { process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }
+const secretKey = process.env.CLERK_SECRET_KEY;
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -31,23 +32,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider publishableKey={clerkKey}>
+    <ClerkProvider publishableKey={clerkKey} >
+
       <html lang="eu">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-screen-2xl mx-auto`}
         >
           <SearchProvider>
-          <CartProvider>
-            <WishlistProvider>
-              <SearchProvider>   {/* Wrap with SearchProvider */}
-                {/* <Header /> Include the Header component here */}
-                <Sale />
-                <HideLayout />
-                {children}
-                <Footer />
-              </SearchProvider>
-            </WishlistProvider>
-          </CartProvider>
+            <CartProvider>
+              <WishlistProvider>
+                <SearchProvider>   {/* Wrap with SearchProvider */}
+                  {/* <Header /> Include the Header component here */}
+                  <Sale />
+                  <HideLayout />
+                  {children}
+                  <Footer />
+                </SearchProvider>
+              </WishlistProvider>
+            </CartProvider>
           </SearchProvider>
         </body>
       </html>
