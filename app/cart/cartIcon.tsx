@@ -1,4 +1,4 @@
-'use client'; 
+'use client'; // Ensure this is a client component
 
 import { useCart } from "@/app/context/CartContext";
 import { ShoppingCart } from "lucide-react";

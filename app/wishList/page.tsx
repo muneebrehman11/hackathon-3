@@ -1,5 +1,4 @@
 
-// app/wishlist/page.tsx
 'use client';
 
 import { useWishlist } from '@/app/context/WishlistContext';

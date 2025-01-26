@@ -1,4 +1,3 @@
-// components/ProductActions.tsx
 'use client';
 
 import { ShoppingCart, Heart } from 'lucide-react';
