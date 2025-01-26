@@ -16,7 +16,6 @@ export default async function Home() {
     description,
     isNew
   }`)
-  console.log(res._id);
 
 
   return (

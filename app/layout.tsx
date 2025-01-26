@@ -11,6 +11,7 @@ import { CartProvider } from "@/app/context/CartContext";
 import { WishlistProvider } from "./context/WishlistContext";
 import { ClerkProvider } from "@clerk/nextjs";
 import { SearchProvider } from "./context/SearchContext"; 
+const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={clerkKey}>
       <html lang="eu">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-screen-2xl mx-auto`}
