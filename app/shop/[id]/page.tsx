@@ -1,8 +1,6 @@
 import { client } from '@/sanity/lib/client';
-import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 import ProductActions from '@/app/component/productActions';
-import ProductAddToCart from '@/app/component/ProductAddToCart';
 import Link from 'next/link';
 import { Eye } from 'lucide-react';
 
@@ -26,7 +24,7 @@ export default async function ProductDetails({ params }: { params: { id: string 
         return (
             <div className="flex flex-col items-center justify-center min-h-screen text-center">
                 <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
-                <p className="text-gray-600 mb-6">Sorry, we couldn't find the product you were looking for.</p>
+                <p className="text-gray-600 mb-6">Sorry, we couldn`&apos;`t find the product you were looking for.</p>
                 <Link href="/shop" className="text-blue-500 hover:text-blue-600">
                     Go back to Shop
                 </Link>

@@ -10,8 +10,7 @@ import Footer from "./components/layout/footer";
 import { CartProvider } from "@/app/context/CartContext";
 import { WishlistProvider } from "./context/WishlistContext";
 import { ClerkProvider } from "@clerk/nextjs";
-import { SearchProvider } from "./context/SearchContext"; // Import the SearchProvider
-import Header from "@/app/components/layout/header"; // Import the Header component
+import { SearchProvider } from "./context/SearchContext"; 
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
