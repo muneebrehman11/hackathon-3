@@ -213,8 +213,9 @@ export default function Pricing() {
           <p className="font-bold text-base text-gray-900">Yearly</p>
           <button className="w-28 h-10 bg-gray-300 hover:bg-blue-100 rounded-full text-black hover:text-blue-800 font-semibold">
             Save 25%
-          </button>
+        //  </button>
         </div> */}
+        
  <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
       <p className="font-bold text-base text-gray-900">Monthly</p>
       <button
