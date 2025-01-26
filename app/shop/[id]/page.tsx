@@ -180,7 +180,7 @@
 
 //     const { title, price, imageUrl, tags, discountPercentage, description, isNew } = shopProduct;
 
-    
+
 
 //     return (
 //         <div className="container mx-auto px-4 py-8">
@@ -242,7 +242,7 @@ interface ProductDetailsParams {
     params: Promise<{ id: string }>;
 }
 export default async function ProductDetails({ params }: ProductDetailsParams) {
-    const { id } =await  params;
+    const { id } = await params;
 
     const shopProduct = await client.fetch(
         `*[_type == "product" && _id == $id][0]{
@@ -314,9 +314,9 @@ export default async function ProductDetails({ params }: ProductDetailsParams) {
                             </div>
                         </abbr>
                     </div>
-                    <div className="mt-4">
+                    {/* <div className="mt-4">
                         <p className="text-gray-500 text-sm">Tags: {tags?.join(', ') || 'No tags available'}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
