@@ -88,10 +88,15 @@ export default async function ProductDetails({ params }: ProductDetailsParams) {
                             Select Options
                         </button>
                         <ProductActions product={{ _id: id, title, price, imageUrl }} />
-                    
+
                     </div>
                 </div>
             </div>
         </div>
     );
 }
+
+
+
+
+

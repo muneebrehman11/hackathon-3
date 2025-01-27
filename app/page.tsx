@@ -5,7 +5,7 @@ import FeaturedPosts from "./components/widgets/featuredPosts";
 import BestSeller from "@/app/components/widgets/bestSeller";
 
 export default async function Home() {
- 
+
   return (
     <main>
       <div>
@@ -14,7 +14,7 @@ export default async function Home() {
         <BestSeller />
         <Hero2 />
         <FeaturedPosts />
-
+        {/* // */}
       </div>
 
 
